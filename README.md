@@ -21,6 +21,16 @@ The null object can be created in one of the following methods:
 - Helper function: ```no()```
 
 Both will return an instance of the class.
+Calls to any methods or members on this class will return
+the defaults as mentioned in the section above.
+
+## Example
+```php
+(string) NullObject::create()->xyz; // ""
+(bool) NullObject::create()->abc(); // false
+(int) no()->xyz; // 0
+(float) no()->abc(); // 0.0
+```
 
 ## Quirks
 PHP does not allow modifying the behaviour of casting a class to boolean.
