@@ -1,0 +1,29 @@
+{
+    "name": "conceptbyte/null-object",
+    "description": "A Null Object for PHP.",
+    "keywords": ["null-object", "null-object-pattern", "null"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rajdeep Tarat",
+            "email": "rajdeeptarat@gmail.com",
+            "homepage": "http://rajdeeptarat.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConceptByte\\NullObject\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}
